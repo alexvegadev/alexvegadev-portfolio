@@ -11,11 +11,12 @@
       <v-card-text>
         <v-btn
           v-for="icon in icons"
-          :key="icon"
+          :key="icon.icon"
           class="mx-4 white--text"
           icon
+          @click="open(icon.url)"
         >
-          <v-icon size="24px">{{ icon }}</v-icon>
+          <v-icon size="24px">{{ icon.icon }}</v-icon>
         </v-btn>
       </v-card-text>
 
@@ -38,12 +39,15 @@ export default {
     data: () => ({
         year: '2020',
         icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
+        {icon:'mdi-git', url:'https://github.com/alexvegadev'},
+        {icon:'mdi-twitter', url:'https://twitter.com/alexvegadev'},
+        {icon:'mdi-linkedin', url:'https://www.linkedin.com/in/alex-gabriel-peiretti-vega-73312a191/'},
+        {icon:'mdi-instagram', url:'http://instagram.com/alex.veegaa'},
         ],
-    })
+    }),
+    methods: {
+      open: (url) => (window.open(url))
+    }
 }
 </script>
 
