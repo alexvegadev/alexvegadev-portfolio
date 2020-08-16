@@ -19,16 +19,14 @@ export default {
     Bar,
     Footer
   },
-
-  data: () => ({
-    lang: null
-  }),
   beforeCreate(){
-    const lgStored = localStorage.getItem('lang')
-    const mappedData = require('@/assets/data/lang/'+(!lgStored ? 'es' : lgStored)+'.json')
-    for(const val in mappedData.dictionary){
-      this.$store.state.languageDictionary.set(val, mappedData.dictionary[val])
+    let lgStored = localStorage.getItem('lang')
+    if(!lgStored){
+      localStorage.setItem('lang', 'es');
+      lgStored = 'es';
     }
+    this.$store.commit('setLanguage', lgStored);
+    this.$store.commit('remapLang');
   }
 };
 </script>

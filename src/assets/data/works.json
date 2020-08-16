@@ -1,6 +1,8 @@
 {
     "worksList": [{
         "name": "VidaxVidas",
-        "desc": "Una descripción del funcionamiento del sistema en retrospectiva."
+        "desc": "Sistema de donación de sangre.",
+        "techs": "Vue;Html;CSS;JavaScript;Firebase;Heroku",
+        "demo": {"repo":"", "url":"example"}
     }]
 }

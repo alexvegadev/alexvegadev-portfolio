@@ -2,8 +2,15 @@
     "lang": "English",
     "acronim": "en",
     "dictionary": {
+        "whoamiLabel": "Who Am I?",
         "whoami": "Hello, my name is Alex, I'm currently working as a software freelance developer and I'm looking for get new opportunities to get a job and stay learning more and more.",
         "aboutme": "I'm started to code when I was about 12 years old, at the beginning just was curiosity, curiosity about the next: \"How can I do applications such as Google Chrome, games, etc?\" then I started to search information in Google and YouTube, and I found C++ tutorials and I beginning to learn every day a little bit. From then, I've been learning a lot of concepts and programming languages.",
-        "btnHome": "Home"
+        "footer": "Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin.",
+        "btnHome": "Home",
+        "btnAbout": "About",
+        "btnProjects": "Projects",
+        "langLabel": "Language",
+        "langEs": "Spanish",
+        "langEn": "English"
     }
 }

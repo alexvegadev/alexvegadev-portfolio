@@ -1,7 +1,7 @@
 <template>
-    <v-container fluid>
-        <v-row dense class="fill-height">
-            <v-col cols="12" class="child-flex">
+    <v-container fluid class="mb-16">
+        <v-row dense class="fill-height mb-16">
+            <v-col cols="12" class="child-flex mb-4">
                 <h2 class="text-center">TITLE</h2>
                  <v-card max-height="300" class="d-flex">
                     <v-img
